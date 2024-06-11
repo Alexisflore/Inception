@@ -1,7 +1,7 @@
 name = inception
 
 all:
-	if [ ! -f srcs/requirements/nginx/tools/inception-nopass.key ] || [ ! -f srcs/requirements/nginx/tools/inception.crt ]; then \
+	if [ ! -f srcs/requirements/nginx/tools/private.key ] || [ ! -f srcs/requirements/nginx/tools/certificate.crt ]; then \
 	mkcert alfloren.42.fr ;\
 	mv alfloren.42.fr-key.pem srcs/requirements/nginx/tools/private.key ;\
 	mv alfloren.42.fr.pem srcs/requirements/nginx/tools/certificate.crt ;\
