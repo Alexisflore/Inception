@@ -5,8 +5,6 @@ services:
     build:
       context: .
       dockerfile: requirements/nginx/Dockerfile
-      args:
-        - USER: ${USER}
     container_name: nginx
     depends_on:
       - wordpress
